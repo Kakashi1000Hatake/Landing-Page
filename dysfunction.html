@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEA Clinics - Erectile Dysfunction Therapy</title>
+    <!-- Use the Inter font for a clean, professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-item:hover .accordion-header {
+            color: #1d4ed8;
+        }
+
+        /* Custom scrollbar for webkit browsers */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation (Simple, to stay focused on the landing page) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700">IDEA Clinics</a>
+            <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors hidden md:block">
+                Book Your Free Teleconsultation
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="bg-white py-16 md:py-24 relative overflow-hidden">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-blue-800 leading-tight mb-4">
+                        Erectile Dysfunction Therapy at Home – Confidence Restored
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-6">
+                        For the first time in Hyderabad, receive world-class care for ED at home with privacy, comfort, and expertise.
+                    </p>
+                    <a href="#booking" class="cta-button inline-flex items-center bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700">
+                        <i class="fas fa-hand-pointer mr-2"></i> Book Your Free Teleconsultation
+                    </a>
+                </div>
+                <!-- Visual Suggestion: Placeholder image for a confident man/couple -->
+                <div class="md:w-1/2 w-full flex justify-center">
+                    <img src="https://placehold.co/600x400/1e40af/ffffff?text=Confident+Man/Couple" alt="Confident man and couple" class="rounded-xl shadow-xl max-w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote 1 -->
+        <section class="bg-blue-50 py-12">
+            <div class="container mx-auto px-4 text-center">
+                <blockquote class="text-2xl font-semibold text-blue-800 italic">
+                    “Many men with diabetes quietly face erection problems — you’re not alone.”
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- 2. About the Service & 3. Services Offered -->
+        <section class="py-16 md:py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                        IDEA Clinics – Men’s Sexual Health Program
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                        IDEA Clinics brings you a comprehensive Men’s Sexual Health Program focused on Erectile Dysfunction (ED). Services are delivered at home with scientific expertise and complete privacy.
+                    </p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 transform transition-transform duration-300 hover:scale-[1.02]">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-user-md"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Psychiatrist Consultations</h3>
+                        <p class="text-gray-600">4 consultations with psychiatrists in a month.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 transform transition-transform duration-300 hover:scale-[1.02]">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-flask"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Endocrinologist Consultations</h3>
+                        <p class="text-gray-600">2 consultations with endocrinologists.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 transform transition-transform duration-300 hover:scale-[1.02]">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-notes-medical"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Comprehensive Tests</h3>
+                        <p class="text-gray-600">Comprehensive hormone tests included.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 transform transition-transform duration-300 hover:scale-[1.02]">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-pills"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Therapy & Medications</h3>
+                        <p class="text-gray-600">Testosterone replacement therapy & medications.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 transform transition-transform duration-300 hover:scale-[1.02]">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-brain"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Psychiatry Medicines</h3>
+                        <p class="text-gray-600">Psychiatry medicines for sexual health.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 transform transition-transform duration-300 hover:scale-[1.02]">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-wave-square"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Shock Wave Therapy</h3>
+                        <p class="text-gray-600">Shock Wave Sound Therapy at home by trained technicians.</p>
+                    </div>
+                </div>
+
+                <!-- Highlight Box -->
+                <div class="mt-12 p-8 bg-blue-100 rounded-xl text-center border-2 border-blue-200">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">Complete One-Month Package</h3>
+                    <p class="text-4xl font-extrabold text-blue-600">₹50,000</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote 2 -->
+        <section class="bg-blue-50 py-12">
+            <div class="container mx-auto px-4 text-center">
+                <blockquote class="text-2xl font-semibold text-blue-800 italic">
+                    “Restoring confidence, one step at a time.”
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- 5. Shock Wave Therapy Explained (FAQ Accordion) -->
+        <section class="py-16 md:py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Shock Wave Therapy – Explained</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                        Get answers to common questions about this safe and effective treatment.
+                    </p>
+                </div>
+                
+                <!-- FAQ Accordion -->
+                <div class="max-w-3xl mx-auto">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item bg-white rounded-xl shadow-md mb-4 overflow-hidden">
+                        <div class="accordion-header p-6 flex justify-between items-center cursor-pointer">
+                            <h3 class="text-lg font-semibold text-gray-800">What is shock wave therapy?</h3>
+                            <i class="fas fa-chevron-down text-gray-500 transform transition-transform duration-300"></i>
+                        </div>
+                        <div class="accordion-content p-6 pt-0 hidden text-gray-600">
+                            Shock wave therapy uses low-intensity sound waves to improve blood flow to the penile area, stimulating new blood vessel growth and helping to restore erectile function naturally.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item bg-white rounded-xl shadow-md mb-4 overflow-hidden">
+                        <div class="accordion-header p-6 flex justify-between items-center cursor-pointer">
+                            <h3 class="text-lg font-semibold text-gray-800">How does it help?</h3>
+                            <i class="fas fa-chevron-down text-gray-500 transform transition-transform duration-300"></i>
+                        </div>
+                        <div class="accordion-content p-6 pt-0 hidden text-gray-600">
+                            By promoting neovascularization (the formation of new blood vessels), shock wave therapy enhances the natural process of achieving and maintaining an erection.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item bg-white rounded-xl shadow-md mb-4 overflow-hidden">
+                        <div class="accordion-header p-6 flex justify-between items-center cursor-pointer">
+                            <h3 class="text-lg font-semibold text-gray-800">Is it painful?</h3>
+                            <i class="fas fa-chevron-down text-gray-500 transform transition-transform duration-300"></i>
+                        </div>
+                        <div class="accordion-content p-6 pt-0 hidden text-gray-600">
+                            No, the procedure is non-invasive and generally painless. Patients may feel a mild tingling sensation.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item bg-white rounded-xl shadow-md mb-4 overflow-hidden">
+                        <div class="accordion-header p-6 flex justify-between items-center cursor-pointer">
+                            <h3 class="text-lg font-semibold text-gray-800">How many sessions are needed?</h3>
+                            <i class="fas fa-chevron-down text-gray-500 transform transition-transform duration-300"></i>
+                        </div>
+                        <div class="accordion-content p-6 pt-0 hidden text-gray-600">
+                            The number of sessions varies depending on individual needs, but a standard treatment course typically involves multiple sessions over a few weeks.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item bg-white rounded-xl shadow-md mb-4 overflow-hidden">
+                        <div class="accordion-header p-6 flex justify-between items-center cursor-pointer">
+                            <h3 class="text-lg font-semibold text-gray-800">Who benefits the most?</h3>
+                            <i class="fas fa-chevron-down text-gray-500 transform transition-transform duration-300"></i>
+                        </div>
+                        <div class="accordion-content p-6 pt-0 hidden text-gray-600">
+                            Men with vasculogenic ED (erectile dysfunction caused by blood vessel issues) often see the most significant benefits.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 6 -->
+                    <div class="accordion-item bg-white rounded-xl shadow-md mb-4 overflow-hidden">
+                        <div class="accordion-header p-6 flex justify-between items-center cursor-pointer">
+                            <h3 class="text-lg font-semibold text-gray-800">Is it safe?</h3>
+                            <i class="fas fa-chevron-down text-gray-500 transform transition-transform duration-300"></i>
+                        </div>
+                        <div class="accordion-content p-6 pt-0 hidden text-gray-600">
+                            Yes, it is considered a safe and effective therapy with minimal side effects.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 7 -->
+                    <div class="accordion-item bg-white rounded-xl shadow-md mb-4 overflow-hidden">
+                        <div class="accordion-header p-6 flex justify-between items-center cursor-pointer">
+                            <h3 class="text-lg font-semibold text-gray-800">Can it be combined with other treatments?</h3>
+                            <i class="fas fa-chevron-down text-gray-500 transform transition-transform duration-300"></i>
+                        </div>
+                        <div class="accordion-content p-6 pt-0 hidden text-gray-600">
+                            Absolutely. Shock wave therapy can be an excellent standalone treatment or part of a comprehensive plan that includes medications or lifestyle changes.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 8 -->
+                    <div class="accordion-item bg-white rounded-xl shadow-md mb-4 overflow-hidden">
+                        <div class="accordion-header p-6 flex justify-between items-center cursor-pointer">
+                            <h3 class="text-lg font-semibold text-gray-800">Why choose IDEA Clinics?</h3>
+                            <i class="fas fa-chevron-down text-gray-500 transform transition-transform duration-300"></i>
+                        </div>
+                        <div class="accordion-content p-6 pt-0 hidden text-gray-600">
+                            We provide a multi-disciplinary approach with doctors, technicians, and a focus on complete privacy and at-home care.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 9 -->
+                    <div class="accordion-item bg-white rounded-xl shadow-md mb-4 overflow-hidden">
+                        <div class="accordion-header p-6 flex justify-between items-center cursor-pointer">
+                            <h3 class="text-lg font-semibold text-gray-800">How are we different?</h3>
+                            <i class="fas fa-chevron-down text-gray-500 transform transition-transform duration-300"></i>
+                        </div>
+                        <div class="accordion-content p-6 pt-0 hidden text-gray-600">
+                            Our unique model brings all therapies, including shock wave therapy, directly to your home, ensuring maximum privacy and convenience.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 10 -->
+                    <div class="accordion-item bg-white rounded-xl shadow-md mb-4 overflow-hidden">
+                        <div class="accordion-header p-6 flex justify-between items-center cursor-pointer">
+                            <h3 class="text-lg font-semibold text-gray-800">How to book?</h3>
+                            <i class="fas fa-chevron-down text-gray-500 transform transition-transform duration-300"></i>
+                        </div>
+                        <div class="accordion-content p-6 pt-0 hidden text-gray-600">
+                            Booking is simple. Click on any of the "Book Your Free Teleconsultation" buttons to get started with a confidential conversation.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote 3 -->
+        <section class="bg-blue-50 py-12">
+            <div class="container mx-auto px-4 text-center">
+                <blockquote class="text-2xl font-semibold text-blue-800 italic">
+                    “Shock Wave Sound Therapy – A Gentle Pulse for Stronger Erections.”
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- 6. Common Sexual Problems in Men -->
+        <section class="py-16 md:py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                        Common Sexual Problems in Men
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <!-- Problem Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-male"></i></div>
+                        <h3 class="text-lg font-semibold">Erectile Dysfunction (ED)</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-clock"></i></div>
+                        <h3 class="text-lg font-semibold">Premature Ejaculation</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-sad-tear"></i></div>
+                        <h3 class="text-lg font-semibold">Low Libido</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-test-alt"></i></div>
+                        <h3 class="text-lg font-semibold">Low Testosterone</h3>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-dna"></i></div>
+                        <h3 class="text-lg font-semibold">Infertility</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Psychiatric Reasons & 8. Endocrine Reasons -->
+        <section class="bg-gray-50 py-16 md:py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Psychiatric Reasons -->
+                    <div>
+                        <div class="text-center md:text-left mb-8">
+                            <h2 class="text-3xl font-bold text-gray-900">Psychiatric (Psychological) Reasons</h2>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="text-blue-600 text-2xl mr-4"><i class="fas fa-smile-slash"></i></div>
+                                <span class="text-lg text-gray-700">Depression</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-600 text-2xl mr-4"><i class="fas fa-running"></i></div>
+                                <span class="text-lg text-gray-700">Performance Anxiety</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-600 text-2xl mr-4"><i class="fas fa-bolt"></i></div>
+                                <span class="text-lg text-gray-700">Chronic Stress</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-600 text-2xl mr-4"><i class="fas fa-handshake-slash"></i></div>
+                                <span class="text-lg text-gray-700">Relationship Conflicts</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-600 text-2xl mr-4"><i class="fas fa-frown"></i></div>
+                                <span class="text-lg text-gray-700">Generalized Anxiety Disorders</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Endocrine Reasons -->
+                    <div>
+                        <div class="text-center md:text-left mb-8">
+                            <h2 class="text-3xl font-bold text-gray-900">Endocrine (Hormonal) Reasons</h2>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="text-blue-600 text-2xl mr-4"><i class="fas fa-testosterone-alt"></i></div>
+                                <span class="text-lg text-gray-700">Low Testosterone</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-600 text-2xl mr-4"><i class="fas fa-candy-cane"></i></div>
+                                <span class="text-lg text-gray-700">Diabetes Mellitus</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-600 text-2xl mr-4"><i class="fas fa-weight"></i></div>
+                                <span class="text-lg text-gray-700">Hyperprolactinemia</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-600 text-2xl mr-4"><i class="fas fa-butterfly"></i></div>
+                                <span class="text-lg text-gray-700">Thyroid Disorders</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-600 text-2xl mr-4"><i class="fas fa-leaf"></i></div>
+                                <span class="text-lg text-gray-700">Adrenal Disorders</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Business Model Highlights & 10. Lead Growth -->
+        <section class="py-16 md:py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Business Model</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">Value Proposition</h3>
+                        <ul class="space-y-4 text-lg text-gray-700">
+                            <li class="flex items-start"><i class="fas fa-home text-blue-600 mt-1 mr-3"></i> At-home complete care for ED & men’s health.</li>
+                            <li class="flex items-start"><i class="fas fa-hands-helping text-blue-600 mt-1 mr-3"></i> Integrated psychiatric + endocrine + hormonal + shockwave therapy.</li>
+                            <li class="flex items-start"><i class="fas fa-user-shield text-blue-600 mt-1 mr-3"></i> Complete privacy & convenience.</li>
+                        </ul>
+                        <div class="mt-8 p-6 bg-blue-100 rounded-xl text-center">
+                            <h4 class="text-xl font-bold text-blue-800">Pricing & Revenue Model</h4>
+                            <p class="text-2xl font-semibold text-blue-600 mt-2">Package Price: ₹50,000 per month</p>
+                        </div>
+                    </div>
+
+                    <!-- Revenue Projection Bar Chart (SVG for better rendering) -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4 text-center">6-Month Revenue Projection</h3>
+                        <div class="w-full h-80 bg-white rounded-xl shadow-md p-6 flex flex-col justify-end items-center">
+                            <!-- SVG for the bar chart -->
+                            <svg class="w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet">
+                                <defs>
+                                    <linearGradient id="barGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <g class="text-gray-500 text-sm">
+                                    <!-- Y-axis labels -->
+                                    <text x="20" y="270" text-anchor="end">0</text>
+                                    <text x="20" y="220" text-anchor="end">200k</text>
+                                    <text x="20" y="170" text-anchor="end">400k</text>
+                                    <text x="20" y="120" text-anchor="end">600k</text>
+                                    <text x="20" y="70" text-anchor="end">800k</text>
+                                    <text x="20" y="20" text-anchor="end">1000k</text>
+                                </g>
+                                <!-- X-axis labels -->
+                                <g class="text-gray-500 text-sm" transform="translate(0, 280)">
+                                    <text x="65" y="15" text-anchor="middle">M1</text>
+                                    <text x="130" y="15" text-anchor="middle">M2</text>
+                                    <text x="195" y="15" text-anchor="middle">M3</text>
+                                    <text x="260" y="15" text-anchor="middle">M4</text>
+                                    <text x="325" y="15" text-anchor="middle">M5-6</text>
+                                </g>
+                                <!-- Bars -->
+                                <rect x="50" y="240" width="30" height="40" fill="url(#barGradient)" rx="5" />
+                                <rect x="115" y="210" width="30" height="70" fill="url(#barGradient)" rx="5" />
+                                <rect x="180" y="170" width="30" height="110" fill="url(#barGradient)" rx="5" />
+                                <rect x="245" y="120" width="30" height="160" fill="url(#barGradient)" rx="5" />
+                                <rect x="310" y="70" width="30" height="210" fill="url(#barGradient)" rx="5" />
+                                <!-- Highlight Box -->
+                                <g transform="translate(190, 10)">
+                                    <rect x="0" y="0" width="180" height="40" fill="#fef08a" rx="8" />
+                                    <text x="90" y="25" text-anchor="middle" font-weight="bold" fill="#78350f" font-size="14">
+                                        Projected Profit: ₹20,00,000
+                                    </text>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Marketing & Scaling Strategy -->
+        <section class="bg-gray-50 py-16 md:py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                        Marketing & Scaling Strategy
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Strategy Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-ad"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Digital Campaigns</h3>
+                        <p class="text-gray-600">Targeted ads on Google & Meta.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-users"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Referral Network</h3>
+                        <p class="text-gray-600">Partnering with urologists, diabetologists, and psychiatrists.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-pencil-alt"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Content Marketing</h3>
+                        <p class="text-gray-600">Creating educational blogs, videos, and patient guides.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-phone-alt"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Confidential Consultations</h3>
+                        <p class="text-gray-600">Offering a free first teleconsult to build trust.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-globe"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Scaling Opportunities</h3>
+                        <p class="text-gray-600">Expanding services beyond Hyderabad to new cities.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100">
+                        <div class="text-3xl text-blue-600 mb-4"><i class="fas fa-venus-mars"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">New Packages</h3>
+                        <p class="text-gray-600">Adding women's sexual health and annual membership plans.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Final CTA -->
+        <section id="booking" class="bg-blue-800 text-white py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">
+                    Restoring Confidence, One Step at a Time.
+                </h2>
+                <p class="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto">
+                    Take the first step towards a healthier, more confident you. Our team is ready to provide expert care with complete privacy.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="cta-button inline-flex items-center bg-white text-blue-800 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100">
+                        <i class="fas fa-hand-pointer mr-2"></i> Book Your Free Teleconsultation
+                    </a>
+                    <a href="#" class="cta-button inline-flex items-center border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-blue-800 transition-colors">
+                        <i class="fas fa-home mr-2"></i> Request a Home Visit
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2024 IDEA Clinics. All rights reserved.</p>
+            <p class="mt-2">Disclaimer: This is a prototype landing page. For real medical advice, consult a licensed professional.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for the FAQ Accordion
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                const icon = item.querySelector('.fa-chevron-down');
+
+                header.addEventListener('click', () => {
+                    // Close all other accordions
+                    accordionItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            const otherContent = otherItem.querySelector('.accordion-content');
+                            const otherIcon = otherItem.querySelector('.fa-chevron-down');
+                            otherContent.classList.add('hidden');
+                            otherIcon.classList.remove('rotate-180');
+                        }
+                    });
+
+                    // Toggle the clicked accordion
+                    content.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
