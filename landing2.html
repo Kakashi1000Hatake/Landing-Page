@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEA Clinics – Men’s Sexual Health</title>
+    <!-- Use Tailwind CSS for a clean, modern, and responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Google Fonts for attractive typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Use Font Awesome for service icons and social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a202c; /* A dark gray for body text */
+            background-color: #f7fafc; /* A very light gray background */
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        /* Custom styles for the accordion functionality */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-header.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="relative bg-gray-900 text-white py-20 md:py-32 overflow-hidden rounded-b-3xl shadow-xl">
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <!-- Placeholder Image (replace with a real image) -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/0d131f/b3c5e8?text=Confident+Man'); opacity: 0.6;"></div>
+
+        <div class="relative container mx-auto px-6 text-center z-10">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                IDEA Clinics – Men’s Sexual Health
+            </h1>
+            <h2 class="text-xl md:text-2xl lg:text-3xl font-light mb-8 opacity-90">
+                Erectile Dysfunction Therapy at Home – Confidence Restored
+            </h2>
+            <a href="#booking-section" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Book Your Free Teleconsultation
+            </a>
+            <p class="mt-4 text-sm font-medium opacity-80">100% Confidential & Private</p>
+        </div>
+    </header>
+
+    <!-- About the Service & Highlights -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- About Section -->
+            <div class="text-center md:text-left">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">About Our Service</h3>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    IDEA Clinics brings you a comprehensive Men’s Sexual Health Program focused on Erectile Dysfunction (ED). For the first time in Hyderabad, India, you can receive world-class care for ED at home with complete privacy, comfort, and scientific expertise.
+                </p>
+            </div>
+            <!-- Inspiring Highlights -->
+            <div class="space-y-6">
+                <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+                    <p class="text-xl italic text-gray-700 leading-snug">"Many men with diabetes quietly face erection problems — <strong class="text-blue-600">you’re not alone.</strong>"</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+                    <p class="text-xl italic text-gray-700 leading-snug">"<strong class="text-blue-600">Restoring confidence,</strong> one step at a time."</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+                    <p class="text-xl italic text-gray-700 leading-snug">"Shock Wave Sound Therapy – <strong class="text-blue-600">A Gentle Pulse for Stronger Erections.</strong>"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Services Offered -->
+    <section class="bg-gray-100 py-16 md:py-24 rounded-3xl shadow-inner">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold text-gray-800 mb-12">A Complete Solution, Delivered to Your Doorstep</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <i class="fas fa-brain text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Psychiatry Consultations</h4>
+                    <p class="text-gray-600">4 consultations with psychiatrists in a month</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <i class="fas fa-hand-holding-heart text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Endocrinology Consultations</h4>
+                    <p class="text-gray-600">2 consultations with endocrinologists</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <i class="fas fa-notes-medical text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Hormone Tests & Medications</h4>
+                    <p class="text-gray-600">Comprehensive hormone tests, testosterone replacement therapy, and other medications</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <i class="fas fa-head-side-virus text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Psychiatry Medicines</h4>
+                    <p class="text-gray-600">Psychiatry medicines for sexual health</p>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <i class="fas fa-wave-square text-4xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Shock Wave Sound Therapy</h4>
+                    <p class="text-gray-600">Shock wave sound therapy at home by trained technicians</p>
+                </div>
+            </div>
+            <div class="mt-12 p-8 bg-blue-100 rounded-2xl text-center shadow-lg">
+                <p class="text-2xl font-bold text-blue-800">Complete one month package: Rs. 50,000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shock Wave Therapy FAQ - Accordion Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Shock Wave Therapy – What You Need to Know</h3>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-gray-800">
+                        What is shock wave (sound wave) therapy?
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6 text-gray-600">
+                        <p>It is a non-invasive treatment that uses gentle sound waves (low-intensity pulses) to improve blood flow and repair tissues in the penis.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-gray-800">
+                        How does it help with erectile dysfunction?
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6 text-gray-600">
+                        <p>The sound waves stimulate new blood vessel growth, improve oxygen delivery, and enhance natural erections by treating the root cause — poor circulation.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-gray-800">
+                        Is the treatment painful?
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6 text-gray-600">
+                        <p>No, the therapy is painless. Most men only feel a mild tapping or tingling sensation during the procedure.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-gray-800">
+                        How many sessions are needed?
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6 text-gray-600">
+                        <p>Typically, 6–12 sessions are recommended, depending on the severity of erectile dysfunction and other health conditions.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-gray-800">
+                        Who benefits the most?
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6 text-gray-600">
+                        <p>Men with diabetes, hypertension, obesity, or vascular-related erectile dysfunction often benefit significantly. It is also useful for men who do not fully respond to medications.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-gray-800">
+                        Is it safe?
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6 text-gray-600">
+                        <p>Yes. Shock wave therapy is safe, has minimal side effects, and is drug-free. The most common temporary effect is mild local discomfort that usually resolves quickly.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-gray-800">
+                        Can it be combined with other treatments?
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6 text-gray-600">
+                        <p>Yes. It can be combined with hormone therapy, psychiatric counseling, or medications for better results.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-header w-full flex justify-between items-center text-left p-6 font-semibold text-lg text-gray-800">
+                        Why choose IDEA Clinics for this therapy?
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6 text-gray-600">
+                        <p>At IDEA Clinics, trained technicians provide this therapy at home in Hyderabad, ensuring complete privacy, convenience, and expert care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Problems & Reasons Section -->
+    <section class="bg-blue-900 text-white py-16 md:py-24 rounded-3xl shadow-xl">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12">Understanding the Root Cause</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Psychiatric Reasons Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-2 border-blue-400">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4">Psychiatric (Psychological) Reasons</h4>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">&bull;</span>
+                            <p><strong>Depression:</strong> lowers libido and disrupts normal erectile and ejaculatory function, treated with antidepressants and psychotherapy.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">&bull;</span>
+                            <p><strong>Performance anxiety:</strong> causes erection difficulties; managed with CBT and relaxation techniques.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">&bull;</span>
+                            <p><strong>Chronic stress:</strong> increases cortisol, suppressing testosterone and sexual desire; addressed with stress management and mindfulness therapy.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">&bull;</span>
+                            <p><strong>Relationship conflicts:</strong> reduce intimacy; improved with couple’s therapy and counseling.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">&bull;</span>
+                            <p><strong>Generalized anxiety disorders:</strong> impair arousal and satisfaction; treated with anti-anxiety medications and psychotherapy.</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Endocrine Reasons Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-2 border-blue-400">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4">Endocrine (Hormonal) Reasons</h4>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">&bull;</span>
+                            <p><strong>Low Testosterone:</strong> causes reduced libido and erections; treated with testosterone replacement therapy.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">&bull;</span>
+                            <p><strong>Diabetes Mellitus:</strong> damages nerves and vessels; improved by strict blood sugar control and metabolic management.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">&bull;</span>
+                            <p><strong>Hyperprolactinemia:</strong> lowers testosterone and desire; treated with dopamine agonists.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">&bull;</span>
+                            <p><strong>Thyroid Disorders:</strong> disturb sexual function; managed with thyroid hormone correction.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-blue-500">&bull;</span>
+                            <p><strong>Adrenal Disorders:</strong> affect cortisol and androgens; corrected with hormone replacement or adrenal disease treatment.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA & Booking Section -->
+    <section class="py-16 md:py-24" id="booking-section">
+        <div class="container mx-auto px-6 text-center">
+            <div class="bg-blue-600 text-white p-10 rounded-3xl shadow-xl">
+                <h3 class="text-3xl font-bold mb-4">Ready to Take the First Step?</h3>
+                <p class="text-lg mb-8 opacity-90">
+                    You can request a home visit, call, or visit one of our branches. At present, this service is restricted to a few areas in Hyderabad.
+                </p>
+                <a href="#" class="bg-white text-blue-600 font-bold py-4 px-12 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Book Your Free Teleconsultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-10 rounded-t-3xl shadow-xl">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm mb-4">&copy; 2025 IDEA Clinics. All rights reserved.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 mb-4">
+                <a href="#" class="hover:text-white transition duration-200">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-200">Terms of Service</a>
+                <a href="#" class="hover:text-white transition duration-200">Contact Us</a>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-200" aria-label="Facebook">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-200" aria-label="Instagram">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-200" aria-label="Twitter">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Accordion Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    // Get the content for the clicked header
+                    const content = header.nextElementSibling;
+                    
+                    // Toggle the 'active' class on the header
+                    header.classList.toggle('active');
+                    
+                    // Adjust the max-height of the content to slide it open or closed
+                    if (header.classList.contains('active')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    } else {
+                        content.style.maxHeight = 0;
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
